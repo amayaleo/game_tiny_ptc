@@ -8,7 +8,7 @@
 
 //#include <cmp/physics.hpp>
 #include <util/typealiases.hpp>
-#include <util/gamecontext.hpp>
+//#include <util/gamecontext.hpp>
 #include <man/componentstorage.hpp>
 namespace ECS{
 
@@ -21,9 +21,9 @@ namespace ECS{
 		static constexpr std::size_t kNUMINITIALENTITIES { 1000 } ;	
 
 		explicit EntityManager_t()
-		///: GameContext_t { } 
+		: GameContext_t { } 
 		{
-				m_Entity.reserve(kNUMINITIALENTITIES);
+				//m_Entity.reserve(kNUMINITIALENTITIES);
 		};
 		
 		//void createEntity(uint32_t,uint32_t,uint32_t,uint32_t,uint32_t) ;

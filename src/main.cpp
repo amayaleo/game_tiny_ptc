@@ -19,6 +19,7 @@ constexpr uint32_t kSCRHEIGHT { 360 };
 int main(void){
   
    try{
+     
         ECS::EntityManager_t entityMan;
         entityMan.createEntity(20,40,16,16,0x00ffffff);
         entityMan.createEntity(80,10,"assets/ninja.png");
@@ -30,9 +31,11 @@ int main(void){
  
        while(render.update(entityMan))
        {
-//         Physics.update(entityMan);
-  //       Collision.update(entityMan);
+         Physics.update(entityMan);
+         Collision.update(entityMan);
        }
+
+       
    }
    catch(...){
      std::cout<< "break program"<<std::endl;

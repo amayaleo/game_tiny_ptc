@@ -28,7 +28,7 @@ endef
 AR	:=	ar
 ARFLAGS 	:= -crs
 RANLIB		:= ranlib
-APP         := libtinyptc.a
+APP         := libpicopng.a
 CCFLAGS     := -Wall -pedantic
 #CCFLAGS		+= -std=c++14
 CFLAGS     	:= $(CCFLAGS)
@@ -37,7 +37,7 @@ C			:= gcc
 MKDIR       := mkdir -p
 SRC         := src
 OBJ         := obj
-LIBS		:= -lX11 -lXext
+#LIBS		:= -lX11 -lXext
 
 #para el uso commando es make DEBUG=1
 ifdef DEBUG 
